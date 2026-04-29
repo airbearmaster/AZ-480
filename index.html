@@ -1,10 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raif DevOps</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .highlight {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        .btn {
+            margin-top: 25px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 30px;
+            background: #ff7b00;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff9500;
+            transform: scale(1.05);
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello from Azure 🚀</h1>
-    <p>This is my static web app.</p>
+    <div class="container">
+        <h1>🚀 Hello from Azure</h1>
+        <p>This is my awesome static web app deployed using GitHub Actions & Azure.</p>
+
+        <div class="highlight">
+            ✨ ChatGPT ka kamal hai ✨
+        </div>
+
+        <button class="btn" onclick="alert('DevOps is awesome 😎')">
+            Click Me
+        </button>
+    </div>
 </body>
 </html>
